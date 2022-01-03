@@ -18,8 +18,9 @@ const Header = () => {
     }
     let
 
-    return (
+    return (    
         <div>
+            <h1>Header text</h1>
             
         </div>
     );
