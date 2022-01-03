@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './ScreenHeading.css';
 const ScreenHeading = (props) => {
     return (
         <div className="heading-container">
