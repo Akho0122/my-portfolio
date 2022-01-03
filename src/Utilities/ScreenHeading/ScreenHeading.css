@@ -39,4 +39,5 @@
     width: 35px;
     border-radius: 10px;
     background-color: var(--dark-orange);
+    margin-top: -5px;
 }
