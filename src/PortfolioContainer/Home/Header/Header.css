@@ -35,3 +35,6 @@
     margin: 0 50px 0 0;
     color: var(--white);
 }
+.selected-header-option{
+    color: #ff5823;
+}
