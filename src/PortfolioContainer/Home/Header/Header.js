@@ -24,7 +24,7 @@ const Header = () => {
             TOTAL_SCREENS.map((screen, i) =>(
                 <div key={screen.screen_name} className={getHeaderOptionsClass(i)}
                 onClick={()=> switchScreen(i, screen)}>
-                    <span>{Screen.screen_name}</span>
+                    <span>{screen.screen_name}</span>
                 </div>
             ))
         )
@@ -52,16 +52,16 @@ const Header = () => {
 
     return (    
         <div>
-            <div className="header-option" onClick={()=> setShowHeaderOptions(!showHeaderOptions)}>
+            <div className="header-container" onClick={()=> setShowHeaderOptions(!showHeaderOptions)}>
                  <div className="header-parent">
                      <div className="header-hamburger" onClick={()=> setShowHeaderOptions(!showHeaderOptions)}>
                          <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
                      </div>
                      <div className="header-logo">
-                         <span>Akho.0122 ~</span>
+                         <span>Akhrorbek</span>
                      </div>
-                     <div className={(showHeaderOptions) ? "header-option show-hamburger-options" : "header-options"}>
-                         {getHeaderOptions}
+                     <div className={(showHeaderOptions) ? "header-options show-hamburger-options" : "header-options"}>
+                         {getHeaderOptions()}
                      </div>
                  </div>
             </div>
