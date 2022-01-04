@@ -116,6 +116,48 @@ const Resume = (props) => {
                 <span className="resume-description-text">
                     - I stretch my mental capacity to develope UI as per the given designs.
                 </span>
+            </div>,
+            <div className="resume-screen-container programming-skills-container" key={"programming-skills"}>
+                 {programmingSkillsDetails.map((skill, index) =>(
+                     <div className="skill-parent" key={index}>
+                         <div className="heading-bullet">
+
+                         </div>
+                         <span>{skill.skills}</span>
+                         <div className="skill-percentage">
+                             <div style={{width: skill.ratingPercentage + "%"}}
+                             className="active-percentage">
+                                 
+                             </div>
+                         </div>
+                     </div>
+                 ))}
+            </div>,
+            <div className="resume-screen-container" key="projects">
+                {projectDetails.map((projectDetails, index) =>(
+                    <ResumeHeading 
+                    key={index}
+                    heading={projectDetails.title}
+                    subHeading={projectDetails.subHeading}
+                    description={projectDetails.description}
+                    fromDate={projectDetails.duration.fromDate}
+                    toDate={projectDetails.duration.toDate}
+                    />
+                ))}
+            </div>,
+            <div className="resume-screen-container" key="interest">
+                <ResumeHeading
+                heading="Teaching"
+                description="Apart from being a tech enthusiast and a code writer, I also love teach people what I know simply because I believe in sharing"
+                />
+                <ResumeHeading
+                heading="Music"
+                description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+                />
+                <ResumeHeading
+                heading="Competitive Gaming"
+                description="I like to challenge my reflexes a lot while competing in basketball games, pushing the rank and having interactive gaming sessions excites me the most."
+                />
             </div>
         </div>
     ];
