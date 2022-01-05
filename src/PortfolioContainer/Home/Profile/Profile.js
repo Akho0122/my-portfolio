@@ -37,9 +37,9 @@ function Profile(props) {
                     1000,
                     "Full Stack Developer 💻",
                     1000,
-                    "React / React Native Dev",
+                    "React / React Native Dev 🌐",
                     1000,
-                    "Good English/Russian Speaker",
+                    "Good English/Russian Speaker 👨‍🎓",
                     1000,
                   ]}
                 />
