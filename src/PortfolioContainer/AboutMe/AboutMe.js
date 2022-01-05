@@ -4,12 +4,13 @@ import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
 const AboutMe = (props) => {
+  
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+  ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
     description:
@@ -35,7 +36,7 @@ const AboutMe = (props) => {
     ));
   };
   return (
-    <div className="about-me-container screen-container" id={props.id || ""}>
+    <div className="about-me-container screen-container fade-in" id={props.id || ""}>
       <div className="about-me-parent">
         <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
         <div className="about-me-card">
@@ -51,7 +52,9 @@ const AboutMe = (props) => {
               {renderHighlight()}
             </div>
             <div className="about-me-options">
-              <button className="btn primary-btn">
+              <button className="btn primary-btn"
+              onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+              >
                 {""}
                 Hire Me{""}
               </button>

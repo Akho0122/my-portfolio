@@ -1,6 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
 import './Profile.css';
+import ScrollService from "../../../Utilities/ScrollService";
 function Profile(props) {
   return (
     <div className="profile-container">
@@ -39,7 +40,7 @@ function Profile(props) {
                     1000,
                     "React / React Native Dev 🌐",
                     1000,
-                    "Good English/Russian Speaker 👨‍🎓",
+                    "Good English/Russian Speaker 🔴",
                     1000,
                   ]}
                 />
@@ -51,8 +52,10 @@ function Profile(props) {
             </span>
           </div>
           <div className="profile-options">
-            <button className="btn primary-btn">
-              {""}
+            <button className="btn primary-btn"
+            onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
+            >
+              
               Hire Me{""}
             </button>
             <a href="my resume.pdf" download={"Akhrorbek's resume.pdf"}>
