@@ -57,7 +57,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
+                      I patronized Akhrorbek and when He delivered, I honestly
                       fell in love with the project He is a very honest guy and
                       he delivers ontime.
                       <i className="fa fa-quote-right" />
@@ -93,7 +93,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
+                      I patronized Akhrorbek and when He delivered, I honestly
                       fell in love with the project He is a very honest guy and
                       he delivers ontime.
                       <i className="fa fa-quote-right" />
@@ -117,7 +117,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={mike} alt="no internet connection"></img>
+                    <img src="Img/mike.png" alt="no internet connection"></img>
                     <h5>Mikel</h5>
                     <p>CEO MikeTech</p>
                   </div>
@@ -128,7 +128,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
+                      I patronized Akhrorbek and when He delivered, I honestly
                       fell in love with the project He is a very honest guy and
                       he delivers ontime.
                       <i className="fa fa-quote-right" />
@@ -152,7 +152,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
+                    <img src="Img/lady.png" alt="no internet connection"></img>
                     <h5>Daisy Benned</h5>
                     <p>CEO InansGlobal</p>
                   </div>
@@ -163,7 +163,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
+                      I patronized Akhrorbek and when He delivered, I honestly
                       fell in love with the project He is a very honest guy and
                       he delivers ontime.
                       <i className="fa fa-quote-right" />
@@ -187,7 +187,7 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={man} alt="no internet connection"></img>
+                    <img src="Img/man.png" alt="no internet connection"></img>
                     <h5>Daisy Dominic</h5>
                     <p>CEO InansGlobal</p>
                   </div>
@@ -198,7 +198,7 @@ export default function Testimonial(props) {
         </div>
       </section>
       <div className="footer-image">
-        <img src={shape} alt="image not responding" />
+        <img src="Img/shape-bg.png" alt="image not responding" />
       </div>
     </div>
   );
