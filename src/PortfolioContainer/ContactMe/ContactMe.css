@@ -102,6 +102,14 @@ form button:hover{
     transition: all ease 1s;
     border: 2px solid #1f2235
 }
+button .load{
+    width: 100%;
+}
+button .load img{
+    width: 60px;
+    color: green;
+    margin-left: 5px;
+}
 .img-back{
     flex: 1;
     align-self: center;
@@ -135,6 +143,11 @@ form{
     }
     form{
         flex: 0.9;
+    }
+}
+@media screen and (max-width: 414px) {
+    .central-form h2{
+        font-size: 16px;
     }
 }
 
