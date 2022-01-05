@@ -68,7 +68,7 @@ const handleMessage =(event) => {
 
                 <div className="send-btn">
                     <button type="submit">
-                        send<i className="fa fa-paper-plane"/>
+                        send   <i className="fa fa-paper-plane"/>
                     </button>
                 </div>
             </form>
